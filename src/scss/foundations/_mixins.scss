@@ -1,0 +1,25 @@
+@mixin newMixin ($s, $c, $t) {
+    font-size: $s;
+    color: $c;
+    text-transform: $t;
+}
+@mixin  queer {
+    @media (min-width: 768px) {
+        @content;
+}
+}
+@mixin  phone {
+    @media (min-width: 480px) {
+        @content;
+}
+}
+@mixin  pc {
+    @media (min-width: 1200px) {
+        @content;
+}
+}
+@mixin grid($repeats, $gap) {
+    display: grid;
+    grid-template-columns: repeat($repeats, 1fr);
+    gap: $gap;
+}

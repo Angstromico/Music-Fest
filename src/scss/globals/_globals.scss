@@ -1,0 +1,45 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    font-family: $mainFont;
+    font-size: 1.7rem;
+}
+h1 {
+    //margin-top: 4rem;
+    //text-align: center;
+    font-weight: bold;
+    @include newMixin(3.66rem, $platinum, uppercase);
+}
+p {
+    font-family: $radical;
+    margin-top: 2rem;
+    @include newMixin(1.7rem, $wood, none)
+}
+.container {
+    max-width: 125rem;
+    width: 95%;
+    margin: 0 auto;
+}
+a {
+    text-decoration: none;
+    font-family: $robototo;
+    @include newMixin(2.5rem, $platinum, uppercase);
+}
+img {
+    width: 100%;
+}
+h2 {
+    font-size: 3.5rem;
+    text-transform: none;
+}
+h3 {
+    font-size: 2.5rem;
+}
+h1, h2, h3 {
+    margin: 0;
+}

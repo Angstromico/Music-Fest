@@ -1,0 +1,82 @@
+.lineup {
+    background-color: $rw;
+    padding: $break 0;
+    .stage {
+        padding-top: $break/1.5;
+    }
+    h3 {
+        text-align: center;
+        color: $platinum;
+    }
+    p {
+        color: $cu;
+        text-align: center;
+    }
+    .day {
+        text-transform: uppercase;
+        margin: $break 0;
+    }
+}
+.stage-container {
+    @include queer {
+        @include grid(2, $break);
+    }
+}
+.stage-rock {
+    color: black;
+    font-size: 2rem;
+    &:after {
+        content: '';
+        width: 20rem;
+        height: 10rem;
+        display: block;
+        //background-color: $dg;
+        margin: 2rem auto 0 auto; //center
+        background-size: 10.7rem;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+}
+.other .stage-rock {
+    &:after {
+        background-image: url(../img/saxIcon.png);
+    }
+}
+.rock .stage-rock {
+    &:after {
+        background-image: url(../img/icono_rock.png);
+    }
+}
+.edm .stage-rock {
+    &:after {
+        background-image: url(../img/icono_edm.png);
+    }
+}
+.syn .stage-rock {
+    &:after {
+        background-image: url(../img/114707.png);
+    }
+}
+.calendar {
+    padding: 0;
+    list-style: none;
+    li {
+        padding: $break/1.5;
+        font-weight: bold;
+        span {
+            font-weight: 400;
+        }
+    }
+}
+.bg-color1 .calendar li:nth-child(odd) {
+    background-color: darken($db, 10);
+}
+.bg-color2 .calendar li:nth-child(odd) {
+    background-color: darken($wo, 10);
+}
+.bg-color3 .calendar li:nth-child(odd) {
+    background-color: darken($grape, 10);
+}
+.bg-color4 .calendar li:nth-child(odd) {
+    background-color: darken($dg, 10);
+}

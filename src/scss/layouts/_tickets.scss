@@ -1,0 +1,52 @@
+.tickets {
+    padding: $break 0;
+    h3 {
+        font-size: 5rem;
+        text-align: center;
+        color: $platinum;
+    }
+    .container-tickets {
+        margin-top: 3rem;
+        @include grid(2, $break);
+    }
+    .strategy {
+        p {
+            font-size: 3rem;
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+    }
+}
+.blu {
+    background-color: $blu;
+}
+.pass {
+    border-spacing: 0;
+    width: 100%;
+    thead {
+        background-color: $wo;
+        th {
+            padding: 2.2rem;
+            color: $platinum;
+            font-size: 2.5rem;
+        }
+    }
+    tbody {
+        background-color: $trueplatinum;
+        td {
+            padding: 1.5rem;
+            border-bottom: 1px solid #e1e1e1;
+        }
+    }
+    tfoot {
+        background-color: $silver;
+        tr {
+            color: $goldo;
+        }
+        td {
+            padding: 1.2rem;
+            text-align: center;
+            font-size: 3rem;
+        }
+    }
+}
